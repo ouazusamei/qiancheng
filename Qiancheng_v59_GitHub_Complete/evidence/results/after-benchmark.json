@@ -1,0 +1,23 @@
+[
+  {
+    "rows": 1000,
+    "pairCount": 499500,
+    "storedPairs": 200,
+    "jsonBytes": 14946,
+    "elapsedMs": 4.759360000000001
+  },
+  {
+    "rows": 2000,
+    "pairCount": 1999000,
+    "storedPairs": 200,
+    "jsonBytes": 14947,
+    "elapsedMs": 4.307133999999998
+  },
+  {
+    "rows": 10000,
+    "pairCount": 49995000,
+    "storedPairs": 200,
+    "jsonBytes": 14952,
+    "elapsedMs": 13.870641000000006
+  }
+]

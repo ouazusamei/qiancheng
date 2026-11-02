@@ -1,0 +1,11 @@
+{
+  "zipIntegrity": true,
+  "allExtractedFilesMatched": true,
+  "rootDockerfile": true,
+  "startupHealthVersion": "1.9.45",
+  "guestWithoutCookie": true,
+  "dockerBuildRun": false,
+  "liveCloudBaseTested": false,
+  "realModelTested": false,
+  "realBrowserTested": false
+}

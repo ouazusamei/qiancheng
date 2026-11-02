@@ -1,0 +1,4 @@
+import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';import {writeFileSync} from 'node:fs';
+const root=resolve(process.argv[2]),output=process.argv[3];const m=await import(pathToFileURL(resolve(root,'public/engines/bill-analysis.mjs')));const sizes=m.MAX_DUPLICATE_PAIRS?[1000,2000,10000]:[1000,2000];const results=[];
+for(const n of sizes){const s={transactions:Array.from({length:n},(_,i)=>({id:'x'+i,date:'2026-11-01',time:'12:00:00',merchant:'同一商户',desc:'测试',cents:1000,direction:'out',kind:'expense',cat:'other'}))};const start=performance.now(),r=m.analyzeBills(s,'2026-11');results.push({rows:n,pairCount:r.pairCount??r.pairs.length,storedPairs:r.pairs.length,jsonBytes:Buffer.byteLength(JSON.stringify(r)),elapsedMs:performance.now()-start});}
+if(output)writeFileSync(output,JSON.stringify(results,null,2));console.log(JSON.stringify(results,null,2));

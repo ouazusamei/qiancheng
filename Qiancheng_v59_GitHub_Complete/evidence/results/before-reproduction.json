@@ -1,0 +1,33 @@
+{
+  "realSimulation": {
+    "beforeCash": 99000,
+    "afterCash": 89000,
+    "sameScope": true,
+    "workspaceLabel": "模拟记录",
+    "ledgerMix": [
+      {
+        "source": "wechat",
+        "simulated": false,
+        "cents": 1000
+      },
+      {
+        "simulated": true,
+        "cents": 10000
+      }
+    ]
+  },
+  "ruleQuota": {
+    "status": 429,
+    "error": "操作频繁，请稍后再试"
+  },
+  "duplicate1000": {
+    "pairs": 499500,
+    "jsonBytes": 37852415,
+    "elapsedMs": 612.814268
+  },
+  "duplicate2000": {
+    "pairs": 1999000,
+    "jsonBytes": 153703415,
+    "elapsedMs": 4047.7858570000003
+  }
+}

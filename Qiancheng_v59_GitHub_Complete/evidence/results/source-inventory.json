@@ -1,0 +1,680 @@
+{
+  "node": "v24.22.1",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 110,
+      "sha256": "dd38686101833ea32705c5b87c136311ca95cd9a24cad5fd87abc6dcd9f3ac61"
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "bytes": 1837,
+      "sha256": "37bb6bdafc2b4ced39864ff518f988eb849ed071e022b9082fdc1aca2b4c1ef2"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 252,
+      "sha256": "0b50817fb90467fdfd1b34afa08a384c9abad04c1699f365bbdddfba888ca800"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2030,
+      "sha256": "83523d31d447745a58f283bbf84acbc060deb9e40bb4ecdccd73cd4c81ae1233"
+    },
+    {
+      "path": "lib/agent.mjs",
+      "bytes": 36647,
+      "sha256": "ed39f47a09bd8fafe01908d1998ef5542169d30021f3127493f16e03f4daae3c"
+    },
+    {
+      "path": "lib/bill-agent.mjs",
+      "bytes": 1704,
+      "sha256": "ed4fcd67a149a9fb7fc9b3c0b490f18e10a4abbd3bb3aaa6c12a9b68e5358468"
+    },
+    {
+      "path": "lib/bill-workspaces.mjs",
+      "bytes": 4992,
+      "sha256": "1ce76dd032348301a89120658413a2bd67e8e85cd17c776f534d0d5529a0468a"
+    },
+    {
+      "path": "lib/coach-agent.mjs",
+      "bytes": 10574,
+      "sha256": "96bfd1d2b39a1d129f08fea8abc5e10c10f1fdbc451d5cc05a116b12ba6315c6"
+    },
+    {
+      "path": "lib/conversation.mjs",
+      "bytes": 5022,
+      "sha256": "fb9f5d2e5180bf8d43d77d6cd59965945667a0e79eee2066608c2a61dfcd1c31"
+    },
+    {
+      "path": "lib/domain.mjs",
+      "bytes": 33054,
+      "sha256": "2abbc3ca506586a48a3c250e14237950a378d8280548ebd961c816f22b25e1b4"
+    },
+    {
+      "path": "lib/due-agent.mjs",
+      "bytes": 2917,
+      "sha256": "4c7878f58751b811804d24cb1c916e99dc8c40a3eba6964402badf1ed09e5817"
+    },
+    {
+      "path": "lib/goal-intent.mjs",
+      "bytes": 5906,
+      "sha256": "9a75f551e104223814d4805d82e0860410c661e43724e92320111427f7347875"
+    },
+    {
+      "path": "lib/model-intent.mjs",
+      "bytes": 8637,
+      "sha256": "abcd939d33d07bda22795e630434acc57efd66ba3d71f79f31603a02760e533d"
+    },
+    {
+      "path": "lib/offset.mjs",
+      "bytes": 5393,
+      "sha256": "9baccf14aa6dcd90fe0c79af08d28aa343c89a707c6cd8561d9374e7bbb819cf"
+    },
+    {
+      "path": "lib/people-agent.mjs",
+      "bytes": 15558,
+      "sha256": "d8c9ee0430ef618f8ec7c2d87f517f740c8ede934631b0b2556d0e9d0b117a28"
+    },
+    {
+      "path": "lib/sample-bill.mjs",
+      "bytes": 4781,
+      "sha256": "ab5b6d11db97a1a3f03ec36a72f7cb7bf3e1c44e4c4c2351d33c3c69c6e1420b"
+    },
+    {
+      "path": "lib/subscription-agent.mjs",
+      "bytes": 18382,
+      "sha256": "140ba76baeb7a57324152a1c0f5ae96fe834b95d1ceffd55226e0dd82c25510f"
+    },
+    {
+      "path": "lib/tasks.mjs",
+      "bytes": 6243,
+      "sha256": "67b422bffd5e4360f514e96076b06d5787f47449b47f9475a54941d62fe9f6b5"
+    },
+    {
+      "path": "package.json",
+      "bytes": 313,
+      "sha256": "07d42f07497c72952af8ce376ae58ba4f34080613b358aa7a26c6ce261dfbd0c"
+    },
+    {
+      "path": "public/agent-ui.mjs",
+      "bytes": 6667,
+      "sha256": "1bae16d1117930206433253e6ebbe5da96344fa52ccd36904d69c416863f18c0"
+    },
+    {
+      "path": "public/app.mjs",
+      "bytes": 96049,
+      "sha256": "701bf1274291448309715c57332cb260c1355f9c691e444e9f73e0d6ed0e14a7"
+    },
+    {
+      "path": "public/bill-ui.mjs",
+      "bytes": 8096,
+      "sha256": "78cd6229efbe899b90efe3c077226597e13bac50bffdaef556ede161d27708fa"
+    },
+    {
+      "path": "public/chat-ui.mjs",
+      "bytes": 2512,
+      "sha256": "a9ea69306b721db21e89c8aeb6d0fbce64d60f6c67901d6343a74276976abdda"
+    },
+    {
+      "path": "public/coach-flow-ui.mjs",
+      "bytes": 6467,
+      "sha256": "5e0f48872c0949329cbf53b2f724175529c379bb66f8457e8466549e7f0dd267"
+    },
+    {
+      "path": "public/coach-ui.mjs",
+      "bytes": 12269,
+      "sha256": "d0ba32341a3a5f04df2693380012c1e185e4ce4dd20aa3728e32cd2dfcea3059"
+    },
+    {
+      "path": "public/engines/bill-analysis.mjs",
+      "bytes": 8355,
+      "sha256": "bc3f3b1444bcf49ba250dc9d13b4903d7dabc876226dad4d12ab807445dc5a47"
+    },
+    {
+      "path": "public/engines/chat-input.mjs",
+      "bytes": 614,
+      "sha256": "df8fb30dfc703034368bfdecfb8b4552876d911d097be2a657f721264c3fd5c5"
+    },
+    {
+      "path": "public/engines/classifier.mjs",
+      "bytes": 8232,
+      "sha256": "e7b4c57be6ab4797e182dc4bb603e9128818207eb4acb4a57e3e4439945e9ddf"
+    },
+    {
+      "path": "public/engines/coach-scenario.mjs",
+      "bytes": 2304,
+      "sha256": "72f84416893728e45c5a4b67c07c1dae9838c66e704c244a291c5b7e04d80cec"
+    },
+    {
+      "path": "public/engines/conversation.mjs",
+      "bytes": 3194,
+      "sha256": "719b54e81b5ced4fc7e4aed635c903117ac0e9af0450bd33179900ef44b2717a"
+    },
+    {
+      "path": "public/engines/file-reader.mjs",
+      "bytes": 10703,
+      "sha256": "03d6d7210dde42bbdf8947280db484c7c6bc320fb9c7b43922747460d9dc0ffe"
+    },
+    {
+      "path": "public/engines/goal.mjs",
+      "bytes": 23285,
+      "sha256": "b5d052111db2d10bddcc19463332cb8a46b84bf9b09708289e6e212cbe87190a"
+    },
+    {
+      "path": "public/engines/import.mjs",
+      "bytes": 3687,
+      "sha256": "6b0d3674f327a25a7d4cdacb22c476ce14bd68a438c338708ffbc3f7ce3a4b39"
+    },
+    {
+      "path": "public/engines/navigation.mjs",
+      "bytes": 1778,
+      "sha256": "7a5383f7f380a4be3c6e71f153671ca4479179db96d2e394bcae533f7ccd34aa"
+    },
+    {
+      "path": "public/engines/people.mjs",
+      "bytes": 711,
+      "sha256": "8980a3cd936892a9f50daf76a04d25d49575fc2584c937e8e50e13ecd6154b5e"
+    },
+    {
+      "path": "public/engines/plan.mjs",
+      "bytes": 6419,
+      "sha256": "0bf021fac2b187954001928ea99a727bd2c85577e8ce310e5cf61cf8bd583c5e"
+    },
+    {
+      "path": "public/engines/profile.mjs",
+      "bytes": 1884,
+      "sha256": "40a7c41b38856c7d25dc20376d2973c46ab64d2d17edb9ebde09f0b876e67aac"
+    },
+    {
+      "path": "public/engines/quote.mjs",
+      "bytes": 1566,
+      "sha256": "7f4c16b70ebd3cf3256296864bba99a412344854c76e84567dfcb72588624f9f"
+    },
+    {
+      "path": "public/engines/session.mjs",
+      "bytes": 2206,
+      "sha256": "a9d61b732d2cc6485f26d732c13e3794ace5cc50108c0a89edc9461b5afc3d8f"
+    },
+    {
+      "path": "public/engines/subscriptions.mjs",
+      "bytes": 2091,
+      "sha256": "52dbe83bf0263a8c528e1c3061125a90e981385146d04bbe75716804f6b9dfed"
+    },
+    {
+      "path": "public/engines/weekly.mjs",
+      "bytes": 6508,
+      "sha256": "edf8980b328472b7f96a7a8f1738d49c41f1fb23176ae209474fb1a56274d6af"
+    },
+    {
+      "path": "public/goal-page-ui.mjs",
+      "bytes": 7613,
+      "sha256": "ddf1d86fabb68004cbb87e927cfa0024812d9c336638b92e2f4fd8729b951444"
+    },
+    {
+      "path": "public/img/bg-1.jpg",
+      "bytes": 199797,
+      "sha256": "8c2705a9d769b9d84458cc04cefb38bc94a3a186a084881e21f97ec4f69a2683"
+    },
+    {
+      "path": "public/img/bg-2.jpg",
+      "bytes": 195497,
+      "sha256": "63f5b173602130d9144008be2da0d03190c97aa3345432a2c6320471b8b813ee"
+    },
+    {
+      "path": "public/img/bg-3.jpg",
+      "bytes": 202309,
+      "sha256": "3e157b782dba73a68e4543011d62d62273d2d225a5a7b7f3dfc2ec27ea95f11e"
+    },
+    {
+      "path": "public/index.html",
+      "bytes": 429,
+      "sha256": "01da900205b9eeea821ce6a562893e0faada742877adc1792bf56c4dd8eefab4"
+    },
+    {
+      "path": "public/intro-ui.mjs",
+      "bytes": 5020,
+      "sha256": "ba54a7be78eb878dda041ac05ec16bcad65c379de3ea708c632a4f8af4ff21bb"
+    },
+    {
+      "path": "public/people-flow-ui.mjs",
+      "bytes": 4074,
+      "sha256": "ab4311d649ccf2b4570daf4f97550814e8e2e54442afc0fde1e0a4f7fd3040db"
+    },
+    {
+      "path": "public/people-ui.mjs",
+      "bytes": 3837,
+      "sha256": "f6deb23c0ccf43706db54611d63160a4c72514662da99da6714cc1b3c2eaffa3"
+    },
+    {
+      "path": "public/plan-ui.mjs",
+      "bytes": 27705,
+      "sha256": "ebf364c14a342c401d8cfec5e7983499a76618ef87afeb89522ae18aa0e9ee27"
+    },
+    {
+      "path": "public/quote-ui.mjs",
+      "bytes": 2036,
+      "sha256": "c3861e740ba757bc4426f261f7f9503818a10fcab3524a794fbb3d1cc207b721"
+    },
+    {
+      "path": "public/recommendation-ui.mjs",
+      "bytes": 523,
+      "sha256": "2391696ae5dea0eb4892c2f7f178289308e632d3dbe680fa86ff9d375a89998e"
+    },
+    {
+      "path": "public/style.css",
+      "bytes": 82571,
+      "sha256": "734590c2cb43ed3c2cd2331b6f9892e5337f6b24cff1e05a9d145a9c4355de27"
+    },
+    {
+      "path": "server.mjs",
+      "bytes": 25628,
+      "sha256": "1d2589ee49cb689cd7e579ffedc18b7040e1e982311b86e4c72775fede3e094f"
+    },
+    {
+      "path": "tests/helpers/controller.mjs",
+      "bytes": 6191,
+      "sha256": "6fc704ac35c17257adb1bfa56f51963aa1676b15c7bc48dcbc7ada16f5603069"
+    },
+    {
+      "path": "tests/helpers/version.mjs",
+      "bytes": 365,
+      "sha256": "7973cc34215df1bfacd0bb6759a1fe1206f77da6790fb394110ef1c480ea6970"
+    },
+    {
+      "path": "tests/quote.test.mjs",
+      "bytes": 7074,
+      "sha256": "f4af871a567227ab2f2be602e31b7bc770af3aa9bce83c0436b675775cd4f391"
+    },
+    {
+      "path": "tests/v16.test.mjs",
+      "bytes": 15061,
+      "sha256": "c74d663e045e894406e64169f6ecb094b721f626cb60a1fcebaf7597baabeedc"
+    },
+    {
+      "path": "tests/v17.test.mjs",
+      "bytes": 12685,
+      "sha256": "cf159943fbbe25edc1b5cf3b6d3a8dcda8385f76e629f9a1ef3e0bc8ebd63788"
+    },
+    {
+      "path": "tests/v18.test.mjs",
+      "bytes": 4995,
+      "sha256": "c3e17b308e0cb536ceb6a6b4a1a69aac74ec7ea78179784b7fe70c0790516568"
+    },
+    {
+      "path": "tests/v19.test.mjs",
+      "bytes": 15254,
+      "sha256": "7796f17ef8b34351937dc61c9cdf6c3e450b0679d7678b7b4b9a613eba520ff1"
+    },
+    {
+      "path": "tests/v20.test.mjs",
+      "bytes": 2616,
+      "sha256": "b753dc5f3a1f0b46458115b7867ff2f0b32c687c03f3f7407f9bc4523cf4ccd9"
+    },
+    {
+      "path": "tests/v21.test.mjs",
+      "bytes": 13054,
+      "sha256": "dbdca7edfc2542e5b60e706cf3c42e3b9837a10ef95f51529c347c7305c36b88"
+    },
+    {
+      "path": "tests/v22.test.mjs",
+      "bytes": 9866,
+      "sha256": "6c711b750fe1b8bef561d3312891784acd28f9300c9e087d5d32a2f302003b89"
+    },
+    {
+      "path": "tests/v23.test.mjs",
+      "bytes": 20832,
+      "sha256": "dc2671e808c72c1ec4527238cf40a713f9c2da191689138930a3a639f972379c"
+    },
+    {
+      "path": "tests/v24.test.mjs",
+      "bytes": 15307,
+      "sha256": "c6971b5491bd2a6f79c3eaf5c00bcff214c406e9fdb7455b1aaf49eec5a296c1"
+    },
+    {
+      "path": "tests/v25.test.mjs",
+      "bytes": 20090,
+      "sha256": "11a629a1f154bd2817c99d510600de6975cc3c24e094499bdfa76e3d079240b1"
+    },
+    {
+      "path": "tests/v26.test.mjs",
+      "bytes": 13317,
+      "sha256": "7264a10619cfa2d59c4f98ab7b9213ff2d4523a0436f2c63f0f8da2148373ef3"
+    },
+    {
+      "path": "tests/v27.test.mjs",
+      "bytes": 4980,
+      "sha256": "dd2ad4656da2132fb226781e50c49d897da0b69ec5752712e63eb14071c17513"
+    },
+    {
+      "path": "tests/v59.test.mjs",
+      "bytes": 14701,
+      "sha256": "5042e463ccdc36ef93ea7815d658e98b1e67029dbee7e04a5af6ab59049e3c9b"
+    }
+  ],
+  "syntax": [
+    {
+      "path": "lib/agent.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/bill-agent.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/bill-workspaces.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/coach-agent.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/conversation.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/domain.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/due-agent.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/goal-intent.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/model-intent.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/offset.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/people-agent.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/sample-bill.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/subscription-agent.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "lib/tasks.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/agent-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/app.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/bill-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/chat-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/coach-flow-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/coach-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/bill-analysis.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/chat-input.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/classifier.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/coach-scenario.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/conversation.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/file-reader.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/goal.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/import.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/navigation.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/people.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/plan.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/profile.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/quote.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/session.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/subscriptions.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/engines/weekly.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/goal-page-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/intro-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/people-flow-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/people-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/plan-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/quote-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public/recommendation-ui.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "server.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/helpers/controller.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/helpers/version.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/quote.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v16.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v17.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v18.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v19.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v20.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v21.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v22.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v23.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v24.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v25.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v26.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v27.test.mjs",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tests/v59.test.mjs",
+      "passed": true,
+      "error": null
+    }
+  ],
+  "counts": {
+    "files": 70,
+    "mjs": 60,
+    "runtimeMjs": 44,
+    "testFiles": 14,
+    "syntaxPassed": 60
+  },
+  "package": {
+    "name": "qiancheng-banking-agent",
+    "version": "1.9.45",
+    "private": true,
+    "type": "module",
+    "engines": {
+      "node": ">=24"
+    },
+    "scripts": {
+      "start": "node --env-file-if-exists=.env server.mjs",
+      "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+      "dev": "node server.mjs"
+    }
+  },
+  "healthVersionLiteral": "1.9.45",
+  "missingSubmissionFiles": []
+}

@@ -1,0 +1,2139 @@
+{
+  "generatedAt": "2026-11-01T13:53:19.043Z",
+  "timezone": "Asia/Shanghai",
+  "asOf": "2026-11-01",
+  "billPeriod": "2026-11",
+  "unit": "所有字段名带Cents的值为分；Yuan为元；probability为0—1；deltaPercentagePoints为百分点",
+  "realModelUsed": false,
+  "goals": [
+    {
+      "id": "G01",
+      "scenario": "student",
+      "targetYuan": 5000,
+      "months": 6,
+      "openingYuan": 2000,
+      "deterministicRepeat": true,
+      "inputs": {
+        "city": 2,
+        "home": 3,
+        "job": 6,
+        "commute": 0,
+        "rel": 0,
+        "risk": 0,
+        "time": 0,
+        "kidStage": 0,
+        "school": 0,
+        "incomeNum": 2000,
+        "rent": 0,
+        "leisure": 400,
+        "extraAmt": 0,
+        "extraSave": 0,
+        "studentWork": "none",
+        "place": "武汉",
+        "extraName": "",
+        "kids": [],
+        "extra": [],
+        "expenseReduction": 0,
+        "expenseOverride": null,
+        "saved": 2000,
+        "goal": 5000,
+        "months": 6
+      },
+      "incomeYuan": 2000,
+      "livingBudgetYuan": 1530,
+      "fixedResponsibilitiesYuan": 0,
+      "monthlySurplusYuan": 470,
+      "natural": {
+        "monthlySaveYuan": 350,
+        "prob": 0,
+        "terminalProb": 0,
+        "hits": 0,
+        "paths": 2000,
+        "p50": 3964.0489380604536,
+        "p10": 3750
+      },
+      "routes": [
+        {
+          "index": 0,
+          "name": "冲刺",
+          "monthlySaveYuan": 470,
+          "bufferYuan": 0,
+          "probability": 0,
+          "probabilityPercent": 0,
+          "displayPercent": 0,
+          "hits": 0,
+          "terminalProbability": 0,
+          "medianTerminalYuan": 4444.191116259513,
+          "p10TerminalYuan": 4144.578037283709,
+          "short": true,
+          "band": "在当前假设下，达标很难"
+        },
+        {
+          "index": 1,
+          "name": "均衡",
+          "monthlySaveYuan": 370,
+          "bufferYuan": 100,
+          "probability": 0,
+          "probabilityPercent": 0,
+          "displayPercent": 0,
+          "hits": 0,
+          "terminalProbability": 0,
+          "medianTerminalYuan": 4045.031256538996,
+          "p10TerminalYuan": 3844.27212921323,
+          "short": true,
+          "band": "在当前假设下，达标很难"
+        },
+        {
+          "index": 2,
+          "name": "宽松",
+          "monthlySaveYuan": 280,
+          "bufferYuan": 190,
+          "probability": 0,
+          "probabilityPercent": 0,
+          "displayPercent": 0,
+          "hits": 0,
+          "terminalProbability": 0,
+          "medianTerminalYuan": 3638.4450539692907,
+          "p10TerminalYuan": 3400,
+          "short": true,
+          "band": "在当前假设下，达标很难"
+        }
+      ],
+      "startingCovered": false,
+      "identicalRoutes": false,
+      "sensitivity": [
+        {
+          "label": "多给 6 个月",
+          "deltaPercentagePoints": 99,
+          "note": "总共 12 个月"
+        },
+        {
+          "label": "每月多存 ¥500",
+          "deltaPercentagePoints": 14,
+          "note": "每月先存 ¥850"
+        },
+        {
+          "label": "目标降到 ¥4,250",
+          "deltaPercentagePoints": 0,
+          "note": "少攒 ¥750"
+        }
+      ],
+      "leverPreviews": [
+        {
+          "kind": "save",
+          "targetYuan": 5000,
+          "months": 6,
+          "naturalMonthlySaveYuan": 470,
+          "naturalProbability": 0,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 0
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 470,
+              "probability": 0
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 470,
+              "probability": 0
+            }
+          ],
+          "actualDeltaPercentagePoints": 0
+        },
+        {
+          "kind": "target",
+          "targetYuan": 4250,
+          "months": 6,
+          "naturalMonthlySaveYuan": 350,
+          "naturalProbability": 0,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 0.8045
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 370,
+              "probability": 0
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 280,
+              "probability": 0
+            }
+          ],
+          "actualDeltaPercentagePoints": 0
+        },
+        {
+          "kind": "months",
+          "targetYuan": 5000,
+          "months": 12,
+          "naturalMonthlySaveYuan": 350,
+          "naturalProbability": 0.9905,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 0.9995
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 370,
+              "probability": 0.994
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 280,
+              "probability": 0.856
+            }
+          ],
+          "actualDeltaPercentagePoints": 99
+        }
+      ]
+    },
+    {
+      "id": "G02",
+      "scenario": "student",
+      "targetYuan": 6000,
+      "months": 12,
+      "openingYuan": 2000,
+      "deterministicRepeat": true,
+      "inputs": {
+        "city": 2,
+        "home": 3,
+        "job": 6,
+        "commute": 0,
+        "rel": 0,
+        "risk": 0,
+        "time": 0,
+        "kidStage": 0,
+        "school": 0,
+        "incomeNum": 2000,
+        "rent": 0,
+        "leisure": 400,
+        "extraAmt": 0,
+        "extraSave": 0,
+        "studentWork": "none",
+        "place": "武汉",
+        "extraName": "",
+        "kids": [],
+        "extra": [],
+        "expenseReduction": 0,
+        "expenseOverride": null,
+        "saved": 2000,
+        "goal": 6000,
+        "months": 12
+      },
+      "incomeYuan": 2000,
+      "livingBudgetYuan": 1530,
+      "fixedResponsibilitiesYuan": 0,
+      "monthlySurplusYuan": 470,
+      "natural": {
+        "monthlySaveYuan": 350,
+        "prob": 0.3165,
+        "terminalProb": 0.3165,
+        "hits": 633,
+        "paths": 2000,
+        "p50": 5910.818661301854,
+        "p10": 5588.91830018843
+      },
+      "routes": [
+        {
+          "index": 0,
+          "name": "冲刺",
+          "monthlySaveYuan": 470,
+          "bufferYuan": 0,
+          "probability": 0.9805,
+          "probabilityPercent": 98.05,
+          "displayPercent": 98,
+          "hits": 1961,
+          "terminalProbability": 0.9795,
+          "medianTerminalYuan": 6793.223276512142,
+          "p10TerminalYuan": 6345.08755787495,
+          "short": false,
+          "band": "在当前假设下，达标较有把握"
+        },
+        {
+          "index": 1,
+          "name": "均衡",
+          "monthlySaveYuan": 370,
+          "bufferYuan": 100,
+          "probability": 0.666,
+          "probabilityPercent": 66.60000000000001,
+          "displayPercent": 67,
+          "hits": 1332,
+          "terminalProbability": 0.666,
+          "medianTerminalYuan": 6090.41191658553,
+          "p10TerminalYuan": 5748.933578383016,
+          "short": false,
+          "band": "在当前假设下，达标有希望"
+        },
+        {
+          "index": 2,
+          "name": "宽松",
+          "monthlySaveYuan": 280,
+          "bufferYuan": 190,
+          "probability": 0,
+          "probabilityPercent": 0,
+          "displayPercent": 0,
+          "hits": 0,
+          "terminalProbability": 0,
+          "medianTerminalYuan": 5217.979386593179,
+          "p10TerminalYuan": 4940,
+          "short": true,
+          "band": "在当前假设下，达标很难"
+        }
+      ],
+      "startingCovered": false,
+      "identicalRoutes": false,
+      "sensitivity": [
+        {
+          "label": "每月多存 ¥500",
+          "deltaPercentagePoints": 68,
+          "note": "每月先存 ¥850"
+        },
+        {
+          "label": "多给 6 个月",
+          "deltaPercentagePoints": 68,
+          "note": "总共 18 个月"
+        },
+        {
+          "label": "目标降到 ¥5,100",
+          "deltaPercentagePoints": 67,
+          "note": "少攒 ¥900"
+        }
+      ],
+      "leverPreviews": [
+        {
+          "kind": "save",
+          "targetYuan": 6000,
+          "months": 12,
+          "naturalMonthlySaveYuan": 470,
+          "naturalProbability": 0.9805,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 0.9805
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 470,
+              "probability": 0.9805
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 470,
+              "probability": 0.9805
+            }
+          ],
+          "actualDeltaPercentagePoints": 66
+        },
+        {
+          "kind": "target",
+          "targetYuan": 5100,
+          "months": 12,
+          "naturalMonthlySaveYuan": 350,
+          "naturalProbability": 0.987,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 0.9995
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 370,
+              "probability": 0.9935
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 280,
+              "probability": 0.664
+            }
+          ],
+          "actualDeltaPercentagePoints": 67
+        },
+        {
+          "kind": "months",
+          "targetYuan": 6000,
+          "months": 18,
+          "naturalMonthlySaveYuan": 350,
+          "naturalProbability": 0.9995,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 1
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 370,
+              "probability": 0.9995
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 280,
+              "probability": 0.9785
+            }
+          ],
+          "actualDeltaPercentagePoints": 68
+        }
+      ]
+    },
+    {
+      "id": "G03",
+      "scenario": "student",
+      "targetYuan": 3000,
+      "months": 12,
+      "openingYuan": 0,
+      "deterministicRepeat": true,
+      "inputs": {
+        "city": 2,
+        "home": 3,
+        "job": 6,
+        "commute": 0,
+        "rel": 0,
+        "risk": 0,
+        "time": 0,
+        "kidStage": 0,
+        "school": 0,
+        "incomeNum": 2000,
+        "rent": 0,
+        "leisure": 400,
+        "extraAmt": 0,
+        "extraSave": 0,
+        "studentWork": "none",
+        "place": "武汉",
+        "extraName": "",
+        "kids": [],
+        "extra": [],
+        "expenseReduction": 0,
+        "expenseOverride": null,
+        "saved": 0,
+        "goal": 3000,
+        "months": 12
+      },
+      "incomeYuan": 2000,
+      "livingBudgetYuan": 1530,
+      "fixedResponsibilitiesYuan": 0,
+      "monthlySurplusYuan": 470,
+      "natural": {
+        "monthlySaveYuan": 350,
+        "prob": 0.9905,
+        "terminalProb": 0.9895,
+        "hits": 1981,
+        "paths": 2000,
+        "p50": 3910.8186613018543,
+        "p10": 3588.91830018843
+      },
+      "routes": [
+        {
+          "index": 0,
+          "name": "冲刺",
+          "monthlySaveYuan": 470,
+          "bufferYuan": 0,
+          "probability": 0.9995,
+          "probabilityPercent": 99.95,
+          "displayPercent": 100,
+          "hits": 1999,
+          "terminalProbability": 0.9995,
+          "medianTerminalYuan": 4793.2232765121435,
+          "p10TerminalYuan": 4345.087557874951,
+          "short": false,
+          "band": "在当前假设下，达标较有把握"
+        },
+        {
+          "index": 1,
+          "name": "均衡",
+          "monthlySaveYuan": 370,
+          "bufferYuan": 100,
+          "probability": 0.994,
+          "probabilityPercent": 99.4,
+          "displayPercent": 99,
+          "hits": 1988,
+          "terminalProbability": 0.9935,
+          "medianTerminalYuan": 4090.4119165855295,
+          "p10TerminalYuan": 3748.9335783830156,
+          "short": false,
+          "band": "在当前假设下，达标较有把握"
+        },
+        {
+          "index": 2,
+          "name": "宽松",
+          "monthlySaveYuan": 280,
+          "bufferYuan": 190,
+          "probability": 0.856,
+          "probabilityPercent": 85.6,
+          "displayPercent": 86,
+          "hits": 1712,
+          "terminalProbability": 0.8555,
+          "medianTerminalYuan": 3217.979386593179,
+          "p10TerminalYuan": 2940,
+          "short": false,
+          "band": "在当前假设下，达标较有把握"
+        }
+      ],
+      "startingCovered": false,
+      "identicalRoutes": false,
+      "sensitivity": [
+        {
+          "label": "每月多存 ¥500",
+          "deltaPercentagePoints": 1,
+          "note": "每月先存 ¥850"
+        },
+        {
+          "label": "目标降到 ¥2,550",
+          "deltaPercentagePoints": 1,
+          "note": "少攒 ¥450"
+        },
+        {
+          "label": "多给 6 个月",
+          "deltaPercentagePoints": 1,
+          "note": "总共 18 个月"
+        }
+      ],
+      "leverPreviews": [
+        {
+          "kind": "save",
+          "targetYuan": 3000,
+          "months": 12,
+          "naturalMonthlySaveYuan": 470,
+          "naturalProbability": 0.9995,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 0.9995
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 470,
+              "probability": 0.9995
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 470,
+              "probability": 0.9995
+            }
+          ],
+          "actualDeltaPercentagePoints": 1
+        },
+        {
+          "kind": "target",
+          "targetYuan": 2550,
+          "months": 12,
+          "naturalMonthlySaveYuan": 350,
+          "naturalProbability": 0.9995,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 1
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 370,
+              "probability": 0.9995
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 280,
+              "probability": 0.978
+            }
+          ],
+          "actualDeltaPercentagePoints": 1
+        },
+        {
+          "kind": "months",
+          "targetYuan": 3000,
+          "months": 18,
+          "naturalMonthlySaveYuan": 350,
+          "naturalProbability": 1,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 1
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 370,
+              "probability": 1
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 280,
+              "probability": 0.9995
+            }
+          ],
+          "actualDeltaPercentagePoints": 1
+        }
+      ]
+    },
+    {
+      "id": "G04",
+      "scenario": "worker",
+      "targetYuan": 40000,
+      "months": 12,
+      "openingYuan": 12000,
+      "deterministicRepeat": true,
+      "inputs": {
+        "city": 1,
+        "home": 0,
+        "job": 0,
+        "commute": 1,
+        "rel": 0,
+        "risk": 0,
+        "time": 0,
+        "kidStage": 0,
+        "school": 0,
+        "incomeNum": 8000,
+        "rent": 1800,
+        "leisure": 800,
+        "extraAmt": 0,
+        "extraSave": 0,
+        "studentWork": "unknown",
+        "place": "深圳",
+        "extraName": "",
+        "kids": [],
+        "extra": [],
+        "expenseReduction": 0,
+        "expenseOverride": null,
+        "saved": 12000,
+        "goal": 40000,
+        "months": 12
+      },
+      "incomeYuan": 8000,
+      "livingBudgetYuan": 4360,
+      "fixedResponsibilitiesYuan": 1800,
+      "monthlySurplusYuan": 3640,
+      "natural": {
+        "monthlySaveYuan": 3450,
+        "prob": 0.896,
+        "terminalProb": 0.8955,
+        "hits": 1792,
+        "paths": 2000,
+        "p50": 49858.934073754324,
+        "p10": 39812.859362681505
+      },
+      "routes": [
+        {
+          "index": 0,
+          "name": "冲刺",
+          "monthlySaveYuan": 3640,
+          "bufferYuan": 0,
+          "probability": 0.904,
+          "probabilityPercent": 90.4,
+          "displayPercent": 90,
+          "hits": 1808,
+          "terminalProbability": 0.904,
+          "medianTerminalYuan": 51136.05193198924,
+          "p10TerminalYuan": 40278.77213034356,
+          "short": false,
+          "band": "在当前假设下，达标较有把握"
+        },
+        {
+          "index": 1,
+          "name": "均衡",
+          "monthlySaveYuan": 2910,
+          "bufferYuan": 730,
+          "probability": 0.8325,
+          "probabilityPercent": 83.25,
+          "displayPercent": 83,
+          "hits": 1665,
+          "terminalProbability": 0.8315,
+          "medianTerminalYuan": 44818.27676767853,
+          "p10TerminalYuan": 37564.76603269577,
+          "short": false,
+          "band": "在当前假设下，达标较有把握"
+        },
+        {
+          "index": 2,
+          "name": "宽松",
+          "monthlySaveYuan": 2180,
+          "bufferYuan": 1460,
+          "probability": 0,
+          "probabilityPercent": 0,
+          "displayPercent": 0,
+          "hits": 0,
+          "terminalProbability": 0,
+          "medianTerminalYuan": 37070,
+          "p10TerminalYuan": 32653.713896458426,
+          "short": true,
+          "band": "在当前假设下，达标很难"
+        }
+      ],
+      "startingCovered": false,
+      "identicalRoutes": false,
+      "sensitivity": [
+        {
+          "label": "多给 6 个月",
+          "deltaPercentagePoints": 9,
+          "note": "总共 18 个月"
+        },
+        {
+          "label": "目标降到 ¥34,000",
+          "deltaPercentagePoints": 7,
+          "note": "少攒 ¥6,000"
+        },
+        {
+          "label": "每月多存 ¥500",
+          "deltaPercentagePoints": 1,
+          "note": "每月先存 ¥3,950"
+        }
+      ],
+      "leverPreviews": [
+        {
+          "kind": "save",
+          "targetYuan": 40000,
+          "months": 12,
+          "naturalMonthlySaveYuan": 3640,
+          "naturalProbability": 0.904,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 3640,
+              "probability": 0.904
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 3410,
+              "probability": 0.8945
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 2680,
+              "probability": 0.78
+            }
+          ],
+          "actualDeltaPercentagePoints": 1
+        },
+        {
+          "kind": "target",
+          "targetYuan": 34000,
+          "months": 12,
+          "naturalMonthlySaveYuan": 3450,
+          "naturalProbability": 0.968,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 3640,
+              "probability": 0.968
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 2910,
+              "probability": 0.9595
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 2180,
+              "probability": 0.847
+            }
+          ],
+          "actualDeltaPercentagePoints": 7
+        },
+        {
+          "kind": "months",
+          "targetYuan": 40000,
+          "months": 18,
+          "naturalMonthlySaveYuan": 3450,
+          "naturalProbability": 0.9875,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 3640,
+              "probability": 0.9875
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 2910,
+              "probability": 0.9855
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 2180,
+              "probability": 0.9675
+            }
+          ],
+          "actualDeltaPercentagePoints": 9
+        }
+      ]
+    },
+    {
+      "id": "G05",
+      "scenario": "student",
+      "targetYuan": 1000,
+      "months": 6,
+      "openingYuan": 2000,
+      "deterministicRepeat": true,
+      "inputs": {
+        "city": 2,
+        "home": 3,
+        "job": 6,
+        "commute": 0,
+        "rel": 0,
+        "risk": 0,
+        "time": 0,
+        "kidStage": 0,
+        "school": 0,
+        "incomeNum": 2000,
+        "rent": 0,
+        "leisure": 400,
+        "extraAmt": 0,
+        "extraSave": 0,
+        "studentWork": "none",
+        "place": "武汉",
+        "extraName": "",
+        "kids": [],
+        "extra": [],
+        "expenseReduction": 0,
+        "expenseOverride": null,
+        "saved": 2000,
+        "goal": 1000,
+        "months": 6
+      },
+      "incomeYuan": 2000,
+      "livingBudgetYuan": 1530,
+      "fixedResponsibilitiesYuan": 0,
+      "monthlySurplusYuan": 470,
+      "natural": {
+        "monthlySaveYuan": 350,
+        "prob": 1,
+        "terminalProb": 1,
+        "hits": 2000,
+        "paths": 2000,
+        "p50": 3964.0489380604536,
+        "p10": 3750
+      },
+      "routes": [
+        {
+          "index": 0,
+          "name": "冲刺",
+          "monthlySaveYuan": 0,
+          "bufferYuan": 470,
+          "probability": 1,
+          "probabilityPercent": 100,
+          "displayPercent": 100,
+          "hits": 2000,
+          "terminalProbability": 0.9995,
+          "medianTerminalYuan": 2000,
+          "p10TerminalYuan": 2000,
+          "short": false,
+          "band": "在当前假设下，达标较有把握"
+        },
+        {
+          "index": 1,
+          "name": "均衡",
+          "monthlySaveYuan": 0,
+          "bufferYuan": 470,
+          "probability": 1,
+          "probabilityPercent": 100,
+          "displayPercent": 100,
+          "hits": 2000,
+          "terminalProbability": 0.9995,
+          "medianTerminalYuan": 2000,
+          "p10TerminalYuan": 2000,
+          "short": false,
+          "band": "在当前假设下，达标较有把握"
+        },
+        {
+          "index": 2,
+          "name": "宽松",
+          "monthlySaveYuan": 0,
+          "bufferYuan": 470,
+          "probability": 1,
+          "probabilityPercent": 100,
+          "displayPercent": 100,
+          "hits": 2000,
+          "terminalProbability": 0.9995,
+          "medianTerminalYuan": 2000,
+          "p10TerminalYuan": 2000,
+          "short": false,
+          "band": "在当前假设下，达标较有把握"
+        }
+      ],
+      "startingCovered": true,
+      "identicalRoutes": true,
+      "sensitivity": [
+        {
+          "label": "每月多存 ¥500",
+          "deltaPercentagePoints": 0,
+          "note": "每月先存 ¥850"
+        },
+        {
+          "label": "目标降到 ¥850",
+          "deltaPercentagePoints": 0,
+          "note": "少攒 ¥150"
+        },
+        {
+          "label": "多给 6 个月",
+          "deltaPercentagePoints": 0,
+          "note": "总共 12 个月"
+        }
+      ],
+      "leverPreviews": [
+        {
+          "kind": "save",
+          "targetYuan": 1000,
+          "months": 6,
+          "naturalMonthlySaveYuan": 470,
+          "naturalProbability": 1,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 0,
+              "probability": 1
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 0,
+              "probability": 1
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 0,
+              "probability": 1
+            }
+          ],
+          "actualDeltaPercentagePoints": 0
+        },
+        {
+          "kind": "target",
+          "targetYuan": 850,
+          "months": 6,
+          "naturalMonthlySaveYuan": 350,
+          "naturalProbability": 1,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 0,
+              "probability": 1
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 0,
+              "probability": 1
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 0,
+              "probability": 1
+            }
+          ],
+          "actualDeltaPercentagePoints": 0
+        },
+        {
+          "kind": "months",
+          "targetYuan": 1000,
+          "months": 12,
+          "naturalMonthlySaveYuan": 350,
+          "naturalProbability": 1,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 0,
+              "probability": 1
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 0,
+              "probability": 1
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 0,
+              "probability": 1
+            }
+          ],
+          "actualDeltaPercentagePoints": 0
+        }
+      ]
+    },
+    {
+      "id": "G06",
+      "scenario": "student",
+      "targetYuan": 12000,
+      "months": 24,
+      "openingYuan": 2000,
+      "deterministicRepeat": true,
+      "inputs": {
+        "city": 2,
+        "home": 3,
+        "job": 6,
+        "commute": 0,
+        "rel": 0,
+        "risk": 0,
+        "time": 0,
+        "kidStage": 0,
+        "school": 0,
+        "incomeNum": 2000,
+        "rent": 0,
+        "leisure": 400,
+        "extraAmt": 0,
+        "extraSave": 0,
+        "studentWork": "none",
+        "place": "武汉",
+        "extraName": "",
+        "kids": [],
+        "extra": [],
+        "expenseReduction": 0,
+        "expenseOverride": null,
+        "saved": 2000,
+        "goal": 12000,
+        "months": 24
+      },
+      "incomeYuan": 2000,
+      "livingBudgetYuan": 1530,
+      "fixedResponsibilitiesYuan": 0,
+      "monthlySurplusYuan": 470,
+      "natural": {
+        "monthlySaveYuan": 350,
+        "prob": 0,
+        "terminalProb": 0,
+        "hits": 0,
+        "paths": 2000,
+        "p50": 9695.502061975738,
+        "p10": 9170.286628459728
+      },
+      "routes": [
+        {
+          "index": 0,
+          "name": "冲刺",
+          "monthlySaveYuan": 470,
+          "bufferYuan": 0,
+          "probability": 0.0495,
+          "probabilityPercent": 4.95,
+          "displayPercent": 5,
+          "hits": 99,
+          "terminalProbability": 0.0495,
+          "medianTerminalYuan": 11315.727953795615,
+          "p10TerminalYuan": 10628.654015805969,
+          "short": false,
+          "band": "在当前假设下，达标很难"
+        },
+        {
+          "index": 1,
+          "name": "均衡",
+          "monthlySaveYuan": 370,
+          "bufferYuan": 100,
+          "probability": 0,
+          "probabilityPercent": 0,
+          "displayPercent": 0,
+          "hits": 0,
+          "terminalProbability": 0,
+          "medianTerminalYuan": 10036.638984630428,
+          "p10TerminalYuan": 9488.934536183808,
+          "short": true,
+          "band": "在当前假设下，达标很难"
+        },
+        {
+          "index": 2,
+          "name": "宽松",
+          "monthlySaveYuan": 280,
+          "bufferYuan": 190,
+          "probability": 0,
+          "probabilityPercent": 0,
+          "displayPercent": 0,
+          "hits": 0,
+          "terminalProbability": 0,
+          "medianTerminalYuan": 8323.40839485528,
+          "p10TerminalYuan": 7905.8887983858585,
+          "short": true,
+          "band": "在当前假设下，达标很难"
+        }
+      ],
+      "startingCovered": false,
+      "identicalRoutes": false,
+      "sensitivity": [
+        {
+          "label": "每月多存 ¥500",
+          "deltaPercentagePoints": 61,
+          "note": "每月先存 ¥850"
+        },
+        {
+          "label": "多给 6 个月",
+          "deltaPercentagePoints": 7,
+          "note": "总共 30 个月"
+        },
+        {
+          "label": "目标降到 ¥10,200",
+          "deltaPercentagePoints": 2,
+          "note": "少攒 ¥1,800"
+        }
+      ],
+      "leverPreviews": [
+        {
+          "kind": "save",
+          "targetYuan": 12000,
+          "months": 24,
+          "naturalMonthlySaveYuan": 470,
+          "naturalProbability": 0.0495,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 0.0495
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 470,
+              "probability": 0.0495
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 470,
+              "probability": 0.0495
+            }
+          ],
+          "actualDeltaPercentagePoints": 5
+        },
+        {
+          "kind": "target",
+          "targetYuan": 10200,
+          "months": 24,
+          "naturalMonthlySaveYuan": 350,
+          "naturalProbability": 0.018,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 0.9795
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 370,
+              "probability": 0.309
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 280,
+              "probability": 0
+            }
+          ],
+          "actualDeltaPercentagePoints": 2
+        },
+        {
+          "kind": "months",
+          "targetYuan": 12000,
+          "months": 30,
+          "naturalMonthlySaveYuan": 350,
+          "naturalProbability": 0.074,
+          "routes": [
+            {
+              "name": "冲刺",
+              "monthlySaveYuan": 470,
+              "probability": 0.9885
+            },
+            {
+              "name": "均衡",
+              "monthlySaveYuan": 370,
+              "probability": 0.447
+            },
+            {
+              "name": "宽松",
+              "monthlySaveYuan": 280,
+              "probability": 0
+            }
+          ],
+          "actualDeltaPercentagePoints": 7
+        }
+      ]
+    }
+  ],
+  "bills": [
+    {
+      "id": "B01",
+      "scenario": "student",
+      "period": "2026-11",
+      "loadMessage": "已载入27笔武汉学生虚构账单：本月生活费入账2000元、消费1488.00元、待核对转账100元；期初现金沿用已确认的2000.00元，不重复算收入",
+      "transactionCount": 27,
+      "summary": {
+        "period": "2026-11",
+        "cashCents": 241200,
+        "availableCents": 241200,
+        "expenseCents": 148800,
+        "incomeCents": 200000,
+        "pendingCents": 10000,
+        "reservedCents": 0,
+        "receivableCents": 0,
+        "payableCents": 0,
+        "savedCents": 0,
+        "monthlyCents": null,
+        "requiredCents": 50000,
+        "gapCents": null,
+        "count": 27,
+        "duplicates": 0,
+        "byCategory": {
+          "food": 95500,
+          "other": 3000,
+          "subs": 5800,
+          "life": 15000,
+          "transit": 6000,
+          "shop": 4500,
+          "social": 19000
+        }
+      },
+      "report": {
+        "period": "2026-11",
+        "count": 27,
+        "expenseCount": 25,
+        "totalCents": 148800,
+        "categories": [
+          {
+            "cat": "food",
+            "cents": 95500,
+            "share": 0.6418010752688172
+          },
+          {
+            "cat": "social",
+            "cents": 19000,
+            "share": 0.12768817204301075
+          },
+          {
+            "cat": "life",
+            "cents": 15000,
+            "share": 0.10080645161290322
+          },
+          {
+            "cat": "transit",
+            "cents": 6000,
+            "share": 0.04032258064516129
+          },
+          {
+            "cat": "subs",
+            "cents": 5800,
+            "share": 0.038978494623655914
+          },
+          {
+            "cat": "shop",
+            "cents": 4500,
+            "share": 0.03024193548387097
+          },
+          {
+            "cat": "other",
+            "cents": 3000,
+            "share": 0.020161290322580645
+          }
+        ],
+        "opportunities": [
+          {
+            "id": "late-takeout",
+            "title": "少点几次可替代的夜宵外卖",
+            "count": 4,
+            "cents": 11500,
+            "transactionIds": [
+              "sample-9",
+              "sample-11",
+              "sample-17",
+              "sample-18"
+            ],
+            "merchants": [
+              "美团外卖",
+              "饿了么"
+            ],
+            "action": "如果这些夜宵可以替代，可以先预览少点两次能节省多少，按本期均价估算。必要用餐照常保留。",
+            "suggestedCents": 5750,
+            "scope": "仅本期已导入记录"
+          },
+          {
+            "id": "entertainment",
+            "title": "给娱乐支出设个合适的上限",
+            "count": 3,
+            "cents": 13000,
+            "transactionIds": [
+              "sample-14",
+              "sample-15",
+              "sample-16"
+            ],
+            "merchants": [
+              "校园桌游社",
+              "校园影院"
+            ],
+            "action": "可以先预览把这组娱乐预算下调20%的影响，金额由你调整。重要聚会可以保留。",
+            "suggestedCents": 2600,
+            "scope": "仅本期已导入记录"
+          },
+          {
+            "id": "drinks",
+            "title": "试试调整饮品预算",
+            "count": 8,
+            "cents": 4000,
+            "transactionIds": [
+              "sample-10",
+              "sample-19",
+              "sample-20",
+              "sample-21",
+              "sample-22",
+              "sample-23",
+              "sample-24",
+              "sample-25"
+            ],
+            "merchants": [
+              "蜜雪冰城"
+            ],
+            "action": "可以先预览“每周最多1杯”的饮品预算，按这份账单的杯数和均价估算，再看是否适合你。",
+            "suggestedCents": 1833,
+            "scope": "仅本期已导入记录",
+            "units": 8
+          }
+        ],
+        "pendingCents": 10000,
+        "protectedCents": 6000,
+        "subscriptionCents": 5800,
+        "largePurchases": [],
+        "pairs": [
+          {
+            "firstId": "sample-14",
+            "secondId": "sample-15",
+            "merchant": "校园桌游社",
+            "cents": 4000
+          }
+        ],
+        "pairCount": 1,
+        "pairsTruncated": false,
+        "firstDate": "2026-11-01",
+        "lastDate": "2026-11-25",
+        "excludedCount": 0
+      },
+      "subscriptionEvidence": [
+        {
+          "name": "腾讯视频",
+          "group": "video",
+          "cents": 1500,
+          "count": 1,
+          "dates": [
+            "2026-11-03"
+          ],
+          "transactionIds": [
+            "sample-3"
+          ],
+          "recurringHint": true,
+          "status": "active"
+        },
+        {
+          "name": "爱奇艺",
+          "group": "video",
+          "cents": 2500,
+          "count": 1,
+          "dates": [
+            "2026-11-04"
+          ],
+          "transactionIds": [
+            "sample-4"
+          ],
+          "recurringHint": true,
+          "status": "active"
+        },
+        {
+          "name": "QQ音乐",
+          "group": "music",
+          "cents": 1000,
+          "count": 1,
+          "dates": [
+            "2026-11-12"
+          ],
+          "transactionIds": [
+            "sample-5"
+          ],
+          "recurringHint": true,
+          "status": "active"
+        },
+        {
+          "name": "网易云音乐",
+          "group": "music",
+          "cents": 800,
+          "count": 1,
+          "dates": [
+            "2026-11-15"
+          ],
+          "transactionIds": [
+            "sample-6"
+          ],
+          "recurringHint": true,
+          "status": "active"
+        }
+      ],
+      "budget": [
+        {
+          "id": "late-takeout",
+          "title": "少点几次可替代的夜宵外卖",
+          "count": 4,
+          "evidenceYuan": 115,
+          "suggestedReductionYuan": 57.5,
+          "instruction": "本月可替代夜宵外卖最多2次，预算57.50元；每周核对一次，必要正餐照常保留。",
+          "preview": {
+            "needsProfile": false,
+            "opportunity": {
+              "id": "late-takeout",
+              "title": "少点几次可替代的夜宵外卖",
+              "count": 4,
+              "cents": 11500,
+              "transactionIds": [
+                "sample-9",
+                "sample-11",
+                "sample-17",
+                "sample-18"
+              ],
+              "merchants": [
+                "美团外卖",
+                "饿了么"
+              ],
+              "action": "如果这些夜宵可以替代，可以先预览少点两次能节省多少，按本期均价估算。必要用餐照常保留。",
+              "suggestedCents": 5750,
+              "scope": "仅本期已导入记录"
+            },
+            "routeBeforeProb": 0.9565,
+            "routeAfterProb": 0.995,
+            "beforeRouteSaveCents": 37000,
+            "afterRouteSaveCents": 42000,
+            "beforeExpenseCents": 153000,
+            "afterExpenseCents": 147250,
+            "reductionCents": 5750,
+            "beforeProb": 0.902,
+            "afterProb": 0.9895,
+            "beforeMonthlyCents": 35000,
+            "afterMonthlyCents": 40000,
+            "basis": "生活成本演示假设",
+            "reviewBasis": "{\"period\":\"2026-11\",\"rows\":[[\"sample-0\",200000,\"income\",\"other\",false,\"\",\"\"],[\"sample-1\",80000,\"expense\",\"food\",false,\"\",\"\"],[\"sample-2\",3000,\"expense\",\"other\",false,\"\",\"\"],[\"sample-3\",1500,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-4\",2500,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-5\",1000,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-6\",800,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-7\",15000,\"expense\",\"life\",false,\"\",\"\"],[\"sample-8\",6000,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-9\",2500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-10\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-11\",3000,\"expense\",\"food\",false,\"\",\"\"],[\"sample-12\",4500,\"expense\",\"shop\",false,\"\",\"\"],[\"sample-13\",6000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-14\",4000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-15\",4000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-16\",5000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-17\",2800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-18\",3200,\"expense\",\"food\",false,\"\",\"\"],[\"sample-19\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-20\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-21\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-22\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-23\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-24\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-25\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-loan\",10000,\"unknown\",\"person\",false,\"\",\"\"]]}"
+          }
+        },
+        {
+          "id": "entertainment",
+          "title": "给娱乐支出设个合适的上限",
+          "count": 3,
+          "evidenceYuan": 130,
+          "suggestedReductionYuan": 26,
+          "instruction": "本月娱乐预算104.00元，每周参考24.00元。重要聚会可以保留；周额度包含在月额度内。",
+          "preview": {
+            "needsProfile": false,
+            "opportunity": {
+              "id": "entertainment",
+              "title": "给娱乐支出设个合适的上限",
+              "count": 3,
+              "cents": 13000,
+              "transactionIds": [
+                "sample-14",
+                "sample-15",
+                "sample-16"
+              ],
+              "merchants": [
+                "校园桌游社",
+                "校园影院"
+              ],
+              "action": "可以先预览把这组娱乐预算下调20%的影响，金额由你调整。重要聚会可以保留。",
+              "suggestedCents": 2600,
+              "scope": "仅本期已导入记录"
+            },
+            "routeBeforeProb": 0.9565,
+            "routeAfterProb": 0.981,
+            "beforeRouteSaveCents": 37000,
+            "afterRouteSaveCents": 39000,
+            "beforeExpenseCents": 153000,
+            "afterExpenseCents": 150400,
+            "reductionCents": 2600,
+            "beforeProb": 0.902,
+            "afterProb": 0.9275,
+            "beforeMonthlyCents": 35000,
+            "afterMonthlyCents": 35000,
+            "basis": "生活成本演示假设",
+            "reviewBasis": "{\"period\":\"2026-11\",\"rows\":[[\"sample-0\",200000,\"income\",\"other\",false,\"\",\"\"],[\"sample-1\",80000,\"expense\",\"food\",false,\"\",\"\"],[\"sample-2\",3000,\"expense\",\"other\",false,\"\",\"\"],[\"sample-3\",1500,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-4\",2500,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-5\",1000,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-6\",800,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-7\",15000,\"expense\",\"life\",false,\"\",\"\"],[\"sample-8\",6000,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-9\",2500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-10\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-11\",3000,\"expense\",\"food\",false,\"\",\"\"],[\"sample-12\",4500,\"expense\",\"shop\",false,\"\",\"\"],[\"sample-13\",6000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-14\",4000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-15\",4000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-16\",5000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-17\",2800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-18\",3200,\"expense\",\"food\",false,\"\",\"\"],[\"sample-19\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-20\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-21\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-22\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-23\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-24\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-25\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-loan\",10000,\"unknown\",\"person\",false,\"\",\"\"]]}"
+          }
+        },
+        {
+          "id": "drinks",
+          "title": "试试调整饮品预算",
+          "count": 8,
+          "evidenceYuan": 40,
+          "suggestedReductionYuan": 18.33,
+          "instruction": "饮品先按每周最多1杯试行，本月最多4杯、预算21.67元；每周看看是否合适。",
+          "preview": {
+            "needsProfile": false,
+            "opportunity": {
+              "id": "drinks",
+              "title": "试试调整饮品预算",
+              "count": 8,
+              "cents": 4000,
+              "transactionIds": [
+                "sample-10",
+                "sample-19",
+                "sample-20",
+                "sample-21",
+                "sample-22",
+                "sample-23",
+                "sample-24",
+                "sample-25"
+              ],
+              "merchants": [
+                "蜜雪冰城"
+              ],
+              "action": "可以先预览“每周最多1杯”的饮品预算，按这份账单的杯数和均价估算，再看是否适合你。",
+              "suggestedCents": 1833,
+              "scope": "仅本期已导入记录",
+              "units": 8
+            },
+            "routeBeforeProb": 0.9565,
+            "routeAfterProb": 0.98,
+            "beforeRouteSaveCents": 37000,
+            "afterRouteSaveCents": 39000,
+            "beforeExpenseCents": 153000,
+            "afterExpenseCents": 151167,
+            "reductionCents": 1833,
+            "beforeProb": 0.902,
+            "afterProb": 0.923,
+            "beforeMonthlyCents": 35000,
+            "afterMonthlyCents": 35000,
+            "basis": "生活成本演示假设",
+            "reviewBasis": "{\"period\":\"2026-11\",\"rows\":[[\"sample-0\",200000,\"income\",\"other\",false,\"\",\"\"],[\"sample-1\",80000,\"expense\",\"food\",false,\"\",\"\"],[\"sample-2\",3000,\"expense\",\"other\",false,\"\",\"\"],[\"sample-3\",1500,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-4\",2500,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-5\",1000,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-6\",800,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-7\",15000,\"expense\",\"life\",false,\"\",\"\"],[\"sample-8\",6000,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-9\",2500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-10\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-11\",3000,\"expense\",\"food\",false,\"\",\"\"],[\"sample-12\",4500,\"expense\",\"shop\",false,\"\",\"\"],[\"sample-13\",6000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-14\",4000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-15\",4000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-16\",5000,\"expense\",\"social\",false,\"\",\"\"],[\"sample-17\",2800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-18\",3200,\"expense\",\"food\",false,\"\",\"\"],[\"sample-19\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-20\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-21\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-22\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-23\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-24\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-25\",500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-loan\",10000,\"unknown\",\"person\",false,\"\",\"\"]]}"
+          }
+        }
+      ],
+      "possibleDuplicatePairs": [
+        {
+          "merchant": "校园桌游社",
+          "amountYuan": 40,
+          "first": "19:00:00",
+          "second": "19:25:00"
+        }
+      ],
+      "duplicateMarkedCount": 0,
+      "subscriptionCancellation": {
+        "service": "腾讯视频",
+        "beforeCashCents": 241200,
+        "afterCashCents": 241200,
+        "beforeExpenseCents": 148800,
+        "afterExpenseCents": 148800,
+        "message": "已记录腾讯视频模拟取消。真实扣费仍需到原平台关闭，历史支出不变。",
+        "actualPlatformCallMade": false
+      }
+    },
+    {
+      "id": "B02",
+      "scenario": "worker",
+      "period": "2026-11",
+      "loadMessage": "已载入50笔虚构消费（4155元）和1笔待核对转账（600元）；订阅扣费已标为演示中的在订候选，真实状态仍需核实",
+      "transactionCount": 51,
+      "summary": {
+        "period": "2026-11",
+        "cashCents": 724500,
+        "availableCents": 724500,
+        "expenseCents": 415500,
+        "incomeCents": 0,
+        "pendingCents": 60000,
+        "reservedCents": 0,
+        "receivableCents": 0,
+        "payableCents": 0,
+        "savedCents": 0,
+        "monthlyCents": null,
+        "requiredCents": 50000,
+        "gapCents": null,
+        "count": 51,
+        "duplicates": 0,
+        "byCategory": {
+          "transit": 12600,
+          "other": 150100,
+          "food": 106100,
+          "subs": 5400,
+          "social": 61300,
+          "person": 80000
+        }
+      },
+      "report": {
+        "period": "2026-11",
+        "count": 51,
+        "expenseCount": 50,
+        "totalCents": 415500,
+        "categories": [
+          {
+            "cat": "other",
+            "cents": 150100,
+            "share": 0.36125150421179303
+          },
+          {
+            "cat": "food",
+            "cents": 106100,
+            "share": 0.2553549939831528
+          },
+          {
+            "cat": "person",
+            "cents": 80000,
+            "share": 0.19253910950661854
+          },
+          {
+            "cat": "social",
+            "cents": 61300,
+            "share": 0.14753309265944645
+          },
+          {
+            "cat": "transit",
+            "cents": 12600,
+            "share": 0.03032490974729242
+          },
+          {
+            "cat": "subs",
+            "cents": 5400,
+            "share": 0.012996389891696752
+          }
+        ],
+        "opportunities": [
+          {
+            "id": "late-takeout",
+            "title": "少点几次可替代的夜宵外卖",
+            "count": 8,
+            "cents": 28400,
+            "transactionIds": [
+              "sample-2",
+              "sample-14",
+              "sample-18",
+              "sample-30",
+              "sample-40",
+              "sample-42",
+              "sample-43",
+              "sample-48"
+            ],
+            "merchants": [
+              "美团外卖",
+              "饿了么"
+            ],
+            "action": "如果这些夜宵可以替代，可以先预览少点两次能节省多少，按本期均价估算。必要用餐照常保留。",
+            "suggestedCents": 7100,
+            "scope": "仅本期已导入记录"
+          },
+          {
+            "id": "entertainment",
+            "title": "给娱乐支出设个合适的上限",
+            "count": 3,
+            "cents": 22000,
+            "transactionIds": [
+              "sample-35",
+              "sample-36",
+              "sample-39"
+            ],
+            "merchants": [
+              "快乐星球桌游社",
+              "万象城影院"
+            ],
+            "action": "可以先预览把这组娱乐预算下调20%的影响，金额由你调整。重要聚会可以保留。",
+            "suggestedCents": 4400,
+            "scope": "仅本期已导入记录"
+          }
+        ],
+        "pendingCents": 60000,
+        "protectedCents": 109700,
+        "subscriptionCents": 5400,
+        "largePurchases": [
+          {
+            "id": "sample-16",
+            "merchant": "京东",
+            "cents": 129900,
+            "desc": "蓝牙耳机（大额）"
+          }
+        ],
+        "pairs": [
+          {
+            "firstId": "sample-35",
+            "secondId": "sample-36",
+            "merchant": "快乐星球桌游社",
+            "cents": 6800
+          }
+        ],
+        "pairCount": 1,
+        "pairsTruncated": false,
+        "firstDate": "2026-11-01",
+        "lastDate": "2026-11-23",
+        "excludedCount": 0
+      },
+      "subscriptionEvidence": [
+        {
+          "name": "爱奇艺",
+          "group": "video",
+          "cents": 2500,
+          "count": 1,
+          "dates": [
+            "2026-11-03"
+          ],
+          "transactionIds": [
+            "sample-3"
+          ],
+          "recurringHint": true,
+          "status": "active"
+        },
+        {
+          "name": "腾讯视频",
+          "group": "video",
+          "cents": 1500,
+          "count": 1,
+          "dates": [
+            "2026-11-08"
+          ],
+          "transactionIds": [
+            "sample-13"
+          ],
+          "recurringHint": true,
+          "status": "active"
+        },
+        {
+          "name": "QQ音乐",
+          "group": "music",
+          "cents": 600,
+          "count": 1,
+          "dates": [
+            "2026-11-12"
+          ],
+          "transactionIds": [
+            "sample-21"
+          ],
+          "recurringHint": true,
+          "status": "active"
+        },
+        {
+          "name": "网易云音乐",
+          "group": "music",
+          "cents": 800,
+          "count": 1,
+          "dates": [
+            "2026-11-15"
+          ],
+          "transactionIds": [
+            "sample-49"
+          ],
+          "recurringHint": true,
+          "status": "active"
+        }
+      ],
+      "budget": [
+        {
+          "id": "late-takeout",
+          "title": "少点几次可替代的夜宵外卖",
+          "count": 8,
+          "evidenceYuan": 284,
+          "suggestedReductionYuan": 71,
+          "instruction": "本月可替代夜宵外卖最多6次，预算213.00元；每周核对一次，必要正餐照常保留。",
+          "preview": {
+            "needsProfile": false,
+            "opportunity": {
+              "id": "late-takeout",
+              "title": "少点几次可替代的夜宵外卖",
+              "count": 8,
+              "cents": 28400,
+              "transactionIds": [
+                "sample-2",
+                "sample-14",
+                "sample-18",
+                "sample-30",
+                "sample-40",
+                "sample-42",
+                "sample-43",
+                "sample-48"
+              ],
+              "merchants": [
+                "美团外卖",
+                "饿了么"
+              ],
+              "action": "如果这些夜宵可以替代，可以先预览少点两次能节省多少，按本期均价估算。必要用餐照常保留。",
+              "suggestedCents": 7100,
+              "scope": "仅本期已导入记录"
+            },
+            "routeBeforeProb": 1,
+            "routeAfterProb": 1,
+            "beforeRouteSaveCents": 0,
+            "afterRouteSaveCents": 0,
+            "beforeExpenseCents": 436000,
+            "afterExpenseCents": 428900,
+            "reductionCents": 7100,
+            "beforeProb": 1,
+            "afterProb": 1,
+            "beforeMonthlyCents": 345000,
+            "afterMonthlyCents": 350000,
+            "basis": "生活成本演示假设",
+            "reviewBasis": "{\"period\":\"2026-11\",\"rows\":[[\"sample-0\",600,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-1\",3400,\"expense\",\"other\",false,\"\",\"\"],[\"sample-2\",3200,\"expense\",\"food\",false,\"\",\"\"],[\"sample-3\",2500,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-4\",2800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-5\",1900,\"expense\",\"food\",false,\"\",\"\"],[\"sample-6\",1500,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-7\",2800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-8\",4600,\"expense\",\"social\",false,\"\",\"\"],[\"sample-9\",12800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-10\",80000,\"expense\",\"person\",false,\"\",\"\"],[\"sample-11\",1800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-12\",2500,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-13\",1500,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-14\",4100,\"expense\",\"food\",false,\"\",\"\"],[\"sample-15\",800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-16\",129900,\"expense\",\"other\",false,\"\",\"\"],[\"sample-17\",3200,\"expense\",\"food\",false,\"\",\"\"],[\"sample-18\",2600,\"expense\",\"food\",false,\"\",\"\"],[\"sample-19\",21800,\"expense\",\"social\",false,\"\",\"\"],[\"sample-20\",3500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-21\",600,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-22\",3800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-23\",12900,\"expense\",\"social\",false,\"\",\"\"],[\"sample-24\",9600,\"expense\",\"food\",false,\"\",\"\"],[\"sample-25\",4500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-26\",16800,\"expense\",\"other\",false,\"\",\"\"],[\"sample-27\",3100,\"expense\",\"food\",false,\"\",\"\"],[\"sample-28\",500,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-29\",3200,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-30\",3300,\"expense\",\"food\",false,\"\",\"\"],[\"sample-31\",3900,\"expense\",\"food\",false,\"\",\"\"],[\"sample-32\",2100,\"expense\",\"food\",false,\"\",\"\"],[\"sample-33\",4500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-34\",3900,\"expense\",\"food\",false,\"\",\"\"],[\"sample-35\",6800,\"expense\",\"social\",false,\"\",\"\"],[\"sample-36\",6800,\"expense\",\"social\",false,\"\",\"\"],[\"sample-37\",1500,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-38\",3300,\"expense\",\"food\",false,\"\",\"\"],[\"sample-39\",8400,\"expense\",\"social\",false,\"\",\"\"],[\"sample-40\",4200,\"expense\",\"food\",false,\"\",\"\"],[\"sample-41\",2200,\"expense\",\"food\",false,\"\",\"\"],[\"sample-42\",3600,\"expense\",\"food\",false,\"\",\"\"],[\"sample-43\",4400,\"expense\",\"food\",false,\"\",\"\"],[\"sample-44\",2800,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-45\",3100,\"expense\",\"food\",false,\"\",\"\"],[\"sample-46\",3300,\"expense\",\"food\",false,\"\",\"\"],[\"sample-47\",800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-48\",3000,\"expense\",\"food\",false,\"\",\"\"],[\"sample-49\",800,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-loan\",60000,\"unknown\",\"person\",false,\"\",\"\"]]}"
+          }
+        },
+        {
+          "id": "entertainment",
+          "title": "给娱乐支出设个合适的上限",
+          "count": 3,
+          "evidenceYuan": 220,
+          "suggestedReductionYuan": 44,
+          "instruction": "本月娱乐预算176.00元，每周参考40.61元。重要聚会可以保留；周额度包含在月额度内。",
+          "preview": {
+            "needsProfile": false,
+            "opportunity": {
+              "id": "entertainment",
+              "title": "给娱乐支出设个合适的上限",
+              "count": 3,
+              "cents": 22000,
+              "transactionIds": [
+                "sample-35",
+                "sample-36",
+                "sample-39"
+              ],
+              "merchants": [
+                "快乐星球桌游社",
+                "万象城影院"
+              ],
+              "action": "可以先预览把这组娱乐预算下调20%的影响，金额由你调整。重要聚会可以保留。",
+              "suggestedCents": 4400,
+              "scope": "仅本期已导入记录"
+            },
+            "routeBeforeProb": 1,
+            "routeAfterProb": 1,
+            "beforeRouteSaveCents": 0,
+            "afterRouteSaveCents": 0,
+            "beforeExpenseCents": 436000,
+            "afterExpenseCents": 431600,
+            "reductionCents": 4400,
+            "beforeProb": 1,
+            "afterProb": 1,
+            "beforeMonthlyCents": 345000,
+            "afterMonthlyCents": 345000,
+            "basis": "生活成本演示假设",
+            "reviewBasis": "{\"period\":\"2026-11\",\"rows\":[[\"sample-0\",600,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-1\",3400,\"expense\",\"other\",false,\"\",\"\"],[\"sample-2\",3200,\"expense\",\"food\",false,\"\",\"\"],[\"sample-3\",2500,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-4\",2800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-5\",1900,\"expense\",\"food\",false,\"\",\"\"],[\"sample-6\",1500,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-7\",2800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-8\",4600,\"expense\",\"social\",false,\"\",\"\"],[\"sample-9\",12800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-10\",80000,\"expense\",\"person\",false,\"\",\"\"],[\"sample-11\",1800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-12\",2500,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-13\",1500,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-14\",4100,\"expense\",\"food\",false,\"\",\"\"],[\"sample-15\",800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-16\",129900,\"expense\",\"other\",false,\"\",\"\"],[\"sample-17\",3200,\"expense\",\"food\",false,\"\",\"\"],[\"sample-18\",2600,\"expense\",\"food\",false,\"\",\"\"],[\"sample-19\",21800,\"expense\",\"social\",false,\"\",\"\"],[\"sample-20\",3500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-21\",600,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-22\",3800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-23\",12900,\"expense\",\"social\",false,\"\",\"\"],[\"sample-24\",9600,\"expense\",\"food\",false,\"\",\"\"],[\"sample-25\",4500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-26\",16800,\"expense\",\"other\",false,\"\",\"\"],[\"sample-27\",3100,\"expense\",\"food\",false,\"\",\"\"],[\"sample-28\",500,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-29\",3200,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-30\",3300,\"expense\",\"food\",false,\"\",\"\"],[\"sample-31\",3900,\"expense\",\"food\",false,\"\",\"\"],[\"sample-32\",2100,\"expense\",\"food\",false,\"\",\"\"],[\"sample-33\",4500,\"expense\",\"food\",false,\"\",\"\"],[\"sample-34\",3900,\"expense\",\"food\",false,\"\",\"\"],[\"sample-35\",6800,\"expense\",\"social\",false,\"\",\"\"],[\"sample-36\",6800,\"expense\",\"social\",false,\"\",\"\"],[\"sample-37\",1500,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-38\",3300,\"expense\",\"food\",false,\"\",\"\"],[\"sample-39\",8400,\"expense\",\"social\",false,\"\",\"\"],[\"sample-40\",4200,\"expense\",\"food\",false,\"\",\"\"],[\"sample-41\",2200,\"expense\",\"food\",false,\"\",\"\"],[\"sample-42\",3600,\"expense\",\"food\",false,\"\",\"\"],[\"sample-43\",4400,\"expense\",\"food\",false,\"\",\"\"],[\"sample-44\",2800,\"expense\",\"transit\",false,\"\",\"\"],[\"sample-45\",3100,\"expense\",\"food\",false,\"\",\"\"],[\"sample-46\",3300,\"expense\",\"food\",false,\"\",\"\"],[\"sample-47\",800,\"expense\",\"food\",false,\"\",\"\"],[\"sample-48\",3000,\"expense\",\"food\",false,\"\",\"\"],[\"sample-49\",800,\"expense\",\"subs\",false,\"\",\"\"],[\"sample-loan\",60000,\"unknown\",\"person\",false,\"\",\"\"]]}"
+          }
+        }
+      ],
+      "possibleDuplicatePairs": [
+        {
+          "merchant": "快乐星球桌游社",
+          "amountYuan": 68,
+          "first": "20:15:00",
+          "second": "20:48:00"
+        }
+      ],
+      "duplicateMarkedCount": 0,
+      "subscriptionCancellation": {
+        "service": "爱奇艺",
+        "beforeCashCents": 724500,
+        "afterCashCents": 724500,
+        "beforeExpenseCents": 415500,
+        "afterExpenseCents": 415500,
+        "message": "已记录爱奇艺模拟取消。真实扣费仍需到原平台关闭，历史支出不变。",
+        "actualPlatformCallMade": false
+      }
+    }
+  ],
+  "people": {
+    "id": "P01",
+    "kind": "100元既有流水关联垫付",
+    "initialTransactionYuan": 100,
+    "before": {
+      "period": "2026-11",
+      "cashCents": 241200,
+      "availableCents": 241200,
+      "expenseCents": 148800,
+      "incomeCents": 200000,
+      "pendingCents": 10000,
+      "reservedCents": 0,
+      "receivableCents": 0,
+      "payableCents": 0,
+      "savedCents": 0,
+      "monthlyCents": null,
+      "requiredCents": 50000,
+      "gapCents": null,
+      "count": 27,
+      "duplicates": 0,
+      "byCategory": {
+        "food": 95500,
+        "other": 3000,
+        "subs": 5800,
+        "life": 15000,
+        "transit": 6000,
+        "shop": 4500,
+        "social": 19000
+      }
+    },
+    "afterLink": {
+      "period": "2026-11",
+      "cashCents": 241200,
+      "availableCents": 241200,
+      "expenseCents": 148800,
+      "incomeCents": 200000,
+      "pendingCents": 0,
+      "reservedCents": 0,
+      "receivableCents": 10000,
+      "payableCents": 0,
+      "savedCents": 0,
+      "monthlyCents": null,
+      "requiredCents": 50000,
+      "gapCents": null,
+      "count": 27,
+      "duplicates": 0,
+      "byCategory": {
+        "food": 95500,
+        "other": 3000,
+        "subs": 5800,
+        "life": 15000,
+        "transit": 6000,
+        "shop": 4500,
+        "social": 19000
+      }
+    },
+    "afterRemind": {
+      "period": "2026-11",
+      "cashCents": 241200,
+      "availableCents": 241200,
+      "expenseCents": 148800,
+      "incomeCents": 200000,
+      "pendingCents": 0,
+      "reservedCents": 0,
+      "receivableCents": 10000,
+      "payableCents": 0,
+      "savedCents": 0,
+      "monthlyCents": null,
+      "requiredCents": 50000,
+      "gapCents": null,
+      "count": 27,
+      "duplicates": 0,
+      "byCategory": {
+        "food": 95500,
+        "other": 3000,
+        "subs": 5800,
+        "life": 15000,
+        "transit": 6000,
+        "shop": 4500,
+        "social": 19000
+      }
+    },
+    "afterPartial": {
+      "period": "2026-11",
+      "cashCents": 245200,
+      "availableCents": 245200,
+      "expenseCents": 148800,
+      "incomeCents": 200000,
+      "pendingCents": 0,
+      "reservedCents": 0,
+      "receivableCents": 6000,
+      "payableCents": 0,
+      "savedCents": 0,
+      "monthlyCents": null,
+      "requiredCents": 50000,
+      "gapCents": null,
+      "count": 28,
+      "duplicates": 0,
+      "byCategory": {
+        "food": 95500,
+        "other": 3000,
+        "subs": 5800,
+        "life": 15000,
+        "transit": 6000,
+        "shop": 4500,
+        "social": 19000
+      }
+    },
+    "afterFull": {
+      "period": "2026-11",
+      "cashCents": 251200,
+      "availableCents": 251200,
+      "expenseCents": 148800,
+      "incomeCents": 200000,
+      "pendingCents": 0,
+      "reservedCents": 0,
+      "receivableCents": 0,
+      "payableCents": 0,
+      "savedCents": 0,
+      "monthlyCents": null,
+      "requiredCents": 50000,
+      "gapCents": null,
+      "count": 29,
+      "duplicates": 0,
+      "byCategory": {
+        "food": 95500,
+        "other": 3000,
+        "subs": 5800,
+        "life": 15000,
+        "transit": 6000,
+        "shop": 4500,
+        "social": 19000
+      }
+    },
+    "mailCount": 1,
+    "mailSimulated": true,
+    "paidYuan": 100
+  },
+  "aa": {
+    "id": "P02",
+    "totalPaymentYuan": 100,
+    "otherShareYuan": 40,
+    "before": {
+      "period": "2026-11",
+      "cashCents": 200000,
+      "availableCents": 200000,
+      "expenseCents": 0,
+      "incomeCents": 0,
+      "pendingCents": 0,
+      "reservedCents": 0,
+      "receivableCents": 0,
+      "payableCents": 0,
+      "savedCents": 0,
+      "monthlyCents": null,
+      "requiredCents": 50000,
+      "gapCents": null,
+      "count": 0,
+      "duplicates": 0,
+      "byCategory": {}
+    },
+    "after": {
+      "period": "2026-11",
+      "cashCents": 190000,
+      "availableCents": 190000,
+      "expenseCents": 6000,
+      "incomeCents": 0,
+      "pendingCents": 0,
+      "reservedCents": 0,
+      "receivableCents": 4000,
+      "payableCents": 0,
+      "savedCents": 0,
+      "monthlyCents": null,
+      "requiredCents": 50000,
+      "gapCents": null,
+      "count": 2,
+      "duplicates": 0,
+      "byCategory": {
+        "social": 6000
+      }
+    },
+    "transactionCount": 2,
+    "case": {
+      "id": "3e21443d-9063-47ab-8dce-8d4e0fd36f27",
+      "purpose": "AA",
+      "date": "2026-11-01",
+      "recipient": "小李",
+      "amount": 40,
+      "paid": 0,
+      "offset": 0,
+      "kind": "AA",
+      "confirmed": true,
+      "transactionId": "82815821-ce8d-4100-b489-a9c5c031210f",
+      "dueDate": "",
+      "dueType": "none",
+      "events": [
+        {
+          "at": "2026-11-01T13:53:19.033Z",
+          "text": "用户确认建立往来记录"
+        }
+      ],
+      "reminderDays": 7
+    }
+  },
+  "importFixture": {
+    "id": "I01",
+    "synthetic": true,
+    "rows": [
+      {
+        "date": "2026-11-01",
+        "time": "12:00:00",
+        "merchant": "校园食堂",
+        "desc": "午餐",
+        "amount": "12.00",
+        "direction": "out",
+        "externalId": "AUDIT-01",
+        "rawType": "商户消费",
+        "rawCat": "",
+        "note": "",
+        "occurrence": 0
+      },
+      {
+        "date": "2026-11-01",
+        "time": "18:00:00",
+        "merchant": "便利店",
+        "desc": "生活用品",
+        "amount": "30.00",
+        "direction": "out",
+        "externalId": "AUDIT-02",
+        "rawType": "商户消费",
+        "rawCat": "",
+        "note": "",
+        "occurrence": 0
+      }
+    ],
+    "first": {
+      "added": 2,
+      "skipped": 0,
+      "possible": 0
+    },
+    "second": {
+      "added": 0,
+      "skipped": 2,
+      "possible": 0
+    },
+    "summary": {
+      "period": "2026-11",
+      "cashCents": null,
+      "availableCents": null,
+      "expenseCents": 4200,
+      "incomeCents": 0,
+      "pendingCents": 0,
+      "reservedCents": 0,
+      "receivableCents": 0,
+      "payableCents": 0,
+      "savedCents": 0,
+      "monthlyCents": null,
+      "requiredCents": null,
+      "gapCents": null,
+      "count": 2,
+      "duplicates": 0,
+      "byCategory": {
+        "food": 1200,
+        "shop": 3000
+      }
+    }
+  },
+  "intents": [
+    {
+      "input": "5000元六个月",
+      "mode": "rules",
+      "reply": "目标已整理：6个月攒5000元。请在目标确认区核对并确认保存。",
+      "next": null,
+      "proposal": {
+        "type": "goal",
+        "args": {
+          "name": "",
+          "target": "5000",
+          "months": 6
+        }
+      },
+      "task": null
+    },
+    {
+      "input": "5000，6个月",
+      "mode": "rules",
+      "reply": "目标已整理：6个月攒5000元。请在目标确认区核对并确认保存。",
+      "next": null,
+      "proposal": {
+        "type": "goal",
+        "args": {
+          "name": "",
+          "target": "5000",
+          "months": 6
+        }
+      },
+      "task": null
+    },
+    {
+      "input": "帮我推荐并预览一种储蓄方案",
+      "mode": "rules",
+      "reply": "按你确认的收支，目前的结余能覆盖每月所需储蓄。还要考虑收入和开销的波动，可以继续比较三种储蓄方案。",
+      "next": null,
+      "proposal": null,
+      "task": {
+        "action": "coach-outcome"
+      }
+    },
+    {
+      "input": "帮我预览一种储蓄方案",
+      "mode": "rules",
+      "reply": "按你确认的收支，目前的结余能覆盖每月所需储蓄。还要考虑收入和开销的波动，可以继续比较三种储蓄方案。",
+      "next": null,
+      "proposal": null,
+      "task": {
+        "action": "coach-outcome"
+      }
+    }
+  ]
+}

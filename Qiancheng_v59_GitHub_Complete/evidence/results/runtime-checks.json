@@ -1,0 +1,1151 @@
+{
+  "generatedAt": "2026-11-01T13:56:07.381Z",
+  "runtime": "v24.22.1",
+  "realModel": false,
+  "checks": [
+    {
+      "id": "H01",
+      "category": "http",
+      "title": "实际服务器健康接口与首页资源可读取",
+      "status": "passed",
+      "evidence": {
+        "ok": true,
+        "version": "1.9.45",
+        "bank": "sandbox"
+      }
+    },
+    {
+      "id": "S01",
+      "category": "security",
+      "title": "未认证访问状态返回401",
+      "status": "passed",
+      "evidence": {
+        "code": "SESSION_REQUIRED"
+      }
+    },
+    {
+      "id": "H02",
+      "category": "guest",
+      "title": "新游客无需注册建立独立会话",
+      "status": "passed",
+      "evidence": {
+        "guest": true,
+        "initialCashKnown": false
+      }
+    },
+    {
+      "id": "S02",
+      "category": "security",
+      "title": "缺少CSRF的写请求返回403",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "S03",
+      "category": "security",
+      "title": "跨站Origin被拒绝，同主机HTTPS来源可通过",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "S04",
+      "category": "guest",
+      "title": "Cookie缺失时同一游客凭证仍恢复原身份",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "S05",
+      "category": "guest",
+      "title": "重复游客入口复用身份，未清空当前数据",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "A01",
+      "category": "goal",
+      "title": "5000元六个月正确进入待确认草案，不先保存",
+      "status": "passed",
+      "evidence": {
+        "targetYuan": 5000,
+        "months": 6
+      }
+    },
+    {
+      "id": "S06",
+      "category": "security",
+      "title": "“好”“继续”和confirm:false不替代保存确认",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "S07",
+      "category": "security",
+      "title": "并发重复提交只执行一次，第二次返回replayed",
+      "status": "passed",
+      "evidence": {
+        "revisionIncrement": 1
+      }
+    },
+    {
+      "id": "A02",
+      "category": "goal",
+      "title": "其他任务的生活费数字不会改动目标",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "A03",
+      "category": "goal",
+      "title": "游客确认模拟条件后可计算并采用已有方案",
+      "status": "passed",
+      "evidence": {
+        "selected": "均衡",
+        "monthlyCents": 37000
+      }
+    },
+    {
+      "id": "B01",
+      "category": "bills",
+      "title": "学生样本账单实际保存及分析，现金和消费可复核",
+      "status": "passed",
+      "evidence": {
+        "transactionCount": 27,
+        "cashCents": 241200,
+        "expenseCents": 148800
+      }
+    },
+    {
+      "id": "B02",
+      "category": "subscription",
+      "title": "专项请求绑定所选月份，关闭意图先生成草案",
+      "status": "passed",
+      "evidence": {
+        "selectedService": "腾讯视频",
+        "proposalOnly": true
+      }
+    },
+    {
+      "id": "B03",
+      "category": "subscription",
+      "title": "确认模拟取消不改变现金和历史消费",
+      "status": "passed",
+      "evidence": {
+        "resultMessage": "已记录腾讯视频模拟取消。真实扣费仍需到原平台关闭，历史支出不变。",
+        "cashUnchanged": true,
+        "expenseUnchanged": true
+      }
+    },
+    {
+      "id": "S08",
+      "category": "truthfulness",
+      "title": "取消成功话术应明确属于模拟操作",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "B04",
+      "category": "subscription",
+      "title": "无该月证据的订阅不能被处理",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "B05",
+      "category": "budget",
+      "title": "预算草案预览不保存，明确确认后只增加行动假设",
+      "status": "passed",
+      "evidence": {
+        "actionCount": 1,
+        "futureReductionCents": 500
+      }
+    },
+    {
+      "id": "C01",
+      "category": "people",
+      "title": "100元既有转账关联垫付不重复扣款",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "C02",
+      "category": "people",
+      "title": "未还款与模拟提醒不计成到账或真实送达",
+      "status": "passed",
+      "evidence": {
+        "message": "已存入模拟信箱，未发送短信或微信"
+      }
+    },
+    {
+      "id": "C03",
+      "category": "people",
+      "title": "部分40元再全部60元还款，逐次确认并正确结清",
+      "status": "passed",
+      "evidence": {
+        "paidYuan": 100
+      }
+    },
+    {
+      "id": "C04",
+      "category": "people",
+      "title": "AA只扣整笔付款一次，对方应还与本人消费分别记录",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "I01",
+      "category": "import",
+      "title": "解析错误和取消隔离预览不改变原业务结果",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "I02",
+      "category": "import",
+      "title": "真实格式合成账单隔离保存，原模拟账本及聊天可找回",
+      "status": "passed",
+      "evidence": {
+        "sameIdentity": true,
+        "isolated": true,
+        "simulationRestoredExactly": true
+      }
+    },
+    {
+      "id": "I03",
+      "category": "import",
+      "title": "旧数据域请求头不能写入当前域",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "I04",
+      "category": "import",
+      "title": "重复导入同一合成账单不增加笔数",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "S09",
+      "category": "security",
+      "title": "过期草案不能执行（通过测试库设置过期时间）",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "S10",
+      "category": "security",
+      "title": "注册账户独立登录及他人草案ID隔离",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "S11",
+      "category": "security",
+      "title": "注册账户不能使用游客备用凭证头替代登录Cookie",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "S12",
+      "category": "security",
+      "title": "高风险模拟付款没有验证码时不执行",
+      "status": "passed",
+      "evidence": {
+        "thresholdYuan": 1000,
+        "risk": "red"
+      }
+    },
+    {
+      "id": "S13",
+      "category": "security",
+      "title": "密码复核绑定TOTP，高风险动态码成功后不能重放同一步码",
+      "status": "passed",
+      "evidence": {
+        "bound": true,
+        "replayBlocked": true
+      }
+    },
+    {
+      "id": "S14",
+      "category": "security",
+      "title": "数据版本变化后旧草案拒绝写入",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "S15",
+      "category": "audit",
+      "title": "本地审计哈希链逐条重算一致",
+      "status": "passed",
+      "evidence": {
+        "rows": 48,
+        "externallySigned": false
+      }
+    },
+    {
+      "id": "H03",
+      "category": "persistence",
+      "title": "同一DATA_DIR重启恢复原游客、隔离账本及业务数据",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "S16",
+      "category": "security",
+      "title": "访客过期凭证不能悄悄新建替换账号",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "S17",
+      "category": "guest",
+      "title": "游客不能用未知随机密码绑定TOTP，红色体验有实际限制",
+      "status": "passed",
+      "evidence": {
+        "bindingRejected": true
+      }
+    },
+    {
+      "id": "M01",
+      "category": "model-mock",
+      "title": "模型不可用时规则继续目标提取，不能伪称模型成功",
+      "status": "passed",
+      "evidence": {
+        "mode": "rules-fallback",
+        "targetYuan": 5000,
+        "months": 6,
+        "realModel": false
+      }
+    },
+    {
+      "id": "M02",
+      "category": "model-rules",
+      "title": "常见绕过确认与跨用户注入指令被阻断",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "id": "U01",
+      "category": "ui-mock",
+      "title": "方案比较页的空输入发送现状被准确记录",
+      "status": "passed",
+      "evidence": {
+        "newChatRequests": 0,
+        "previewAutomaticallyOpened": false,
+        "realBrowser": false
+      }
+    },
+    {
+      "id": "A04",
+      "category": "algorithm-consistency",
+      "title": "每月多存500元的敏感度卡片与实际调整预览应使用一致口径",
+      "status": "failed",
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   {\n+     afterPreviewNaturalProbability: 0,\n+     beforeNaturalProbability: 0,\n+     previewDeltaPercentagePoints: 0,\n+     previewMonthlySaveYuan: 470,\n+     scenario: 'G01',\n+     shownDeltaPercentagePoints: 14\n+   },\n+   {\n+     afterPreviewNaturalProbability: 0.9805,\n+     beforeNaturalProbability: 0.3165,\n+     previewDeltaPercentagePoints: 66,\n+     previewMonthlySaveYuan: 470,\n+     scenario: 'G02',\n+     shownDeltaPercentagePoints: 68\n+   },\n+   {\n+     afterPreviewNaturalProbability: 0.0495,\n+     beforeNaturalProb"
+    }
+  ],
+  "counts": {
+    "total": 40,
+    "passed": 39,
+    "failed": 1
+  },
+  "observations": [
+    {
+      "id": "R01",
+      "severity": "resolved",
+      "title": "模拟取消回执已与实际结果一致",
+      "observed": "已记录腾讯视频模拟取消。真实扣费仍需到原平台关闭，历史支出不变。",
+      "source": "lib/domain.mjs subscription; lib/subscription-agent.mjs subscriptionCompletion; public/app.mjs subscriptionCompletionText",
+      "businessFacts": {
+        "simulated": true,
+        "externalPlatformIntegration": false
+      }
+    },
+    {
+      "id": "R02",
+      "severity": "medium",
+      "title": "游客高风险操作体验受限",
+      "observed": "账户密码错误",
+      "explanation": "游客密码由服务端随机生成且未交给用户；普通100元演示可完成，红色操作仍需已绑定TOTP。"
+    },
+    {
+      "id": "R03",
+      "severity": "capability-limit",
+      "title": "最终附件未包含自动推荐并打开方案预览链路",
+      "observed": {
+        "recommendation": {
+          "title": "帮我预览一种储蓄方案",
+          "message": "钱程推荐：帮我预览一种储蓄方案"
+        },
+        "goalScreen": "routes",
+        "newChatRequests": 0,
+        "lastAssistant": "三种方案已保留，请在页面选择一条预览，核对后再确认采用。"
+      },
+      "explanation": "空发送被前端留在三方案比较页，提示手动选择。不能把其他版本的自动推荐预览写入本版本材料。"
+    },
+    {
+      "id": "R05",
+      "severity": "high",
+      "title": "加500元储蓄杠杆的敏感度与实际预览口径不一致",
+      "source": "public/engines/goal.mjs sensitivity()/naturalSave(); public/engines/coach-scenario.mjs adjustedGoal()",
+      "observed": [
+        {
+          "scenario": "G01",
+          "shownDeltaPercentagePoints": 14,
+          "previewDeltaPercentagePoints": 0,
+          "beforeNaturalProbability": 0,
+          "afterPreviewNaturalProbability": 0,
+          "previewMonthlySaveYuan": 470
+        },
+        {
+          "scenario": "G02",
+          "shownDeltaPercentagePoints": 68,
+          "previewDeltaPercentagePoints": 66,
+          "beforeNaturalProbability": 0.3165,
+          "afterPreviewNaturalProbability": 0.9805,
+          "previewMonthlySaveYuan": 470
+        },
+        {
+          "scenario": "G06",
+          "shownDeltaPercentagePoints": 61,
+          "previewDeltaPercentagePoints": 5,
+          "beforeNaturalProbability": 0,
+          "afterPreviewNaturalProbability": 0.0495,
+          "previewMonthlySaveYuan": 470
+        }
+      ],
+      "explanation": "敏感度直接试算自然储蓄+500，实际预览先把自然储蓄封顶在现有月结余，不能把前者当作后者的实际效果。"
+    },
+    {
+      "id": "R04",
+      "severity": "resolved",
+      "title": "包版本与运行版本一致",
+      "observed": {
+        "packageVersion": "1.9.45",
+        "healthVersion": "1.9.45"
+      }
+    }
+  ],
+  "localHttpMetrics": {
+    "scope": "本地顺序HTTP与少量并发提交；规则模式；包含Scrypt、故意失败及本地测试库过期注入；不是压测或真实AI延迟",
+    "requestCount": 119,
+    "p50Ms": 3.457,
+    "p95Ms": 43.09,
+    "maxMs": 85.857
+  },
+  "responseTimes": [
+    {
+      "path": "health",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 20.036
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 401,
+      "elapsedMs": 2.447
+    },
+    {
+      "path": "guest",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 55.994
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 16.899
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 403,
+      "elapsedMs": 3.579
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 403,
+      "elapsedMs": 2.622
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 6.614
+    },
+    {
+      "path": "cancel",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.838
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 2.456
+    },
+    {
+      "path": "guest",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 2.831
+    },
+    {
+      "path": "chat",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 9.78
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 2.403
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.768
+    },
+    {
+      "path": "chat",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 6.732
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.793
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 400,
+      "elapsedMs": 2.602
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.403
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.874
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.751
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.378
+    },
+    {
+      "path": "chat",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 6.178
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.26
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.262
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.501
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.559
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.003
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 2.733
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.293
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.447
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 2.916
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.77
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 72.066
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.632
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.346
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 5.09
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.875
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.724
+    },
+    {
+      "path": "bill-analysis",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.752
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 2.3
+    },
+    {
+      "path": "chat",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.591
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.877
+    },
+    {
+      "path": "chat",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.139
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.703
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.651
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.864
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.7
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 400,
+      "elapsedMs": 2.256
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 85.857
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 5.653
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 15.065
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 4.848
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 5.344
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.686
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 2.378
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 6.776
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.378
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 2.186
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.457
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.093
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.794
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.907
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.469
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.728
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 5.077
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.069
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.472
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 5.58
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 5.432
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 2.601
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 6.397
+    },
+    {
+      "path": "cancel",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 5.616
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 3.465
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 5.954
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.609
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.43
+    },
+    {
+      "path": "bill-analysis",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 5.116
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 2.827
+    },
+    {
+      "path": "bill-workspace",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 2.578
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 2.269
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 409,
+      "elapsedMs": 1.327
+    },
+    {
+      "path": "bill-workspace",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 2.024
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.435
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.264
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.894
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.369
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.267
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 400,
+      "elapsedMs": 2.17
+    },
+    {
+      "path": "register",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 76.789
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.85
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.826
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 400,
+      "elapsedMs": 1.793
+    },
+    {
+      "path": "cancel",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.833
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 401,
+      "elapsedMs": 0.856
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.415
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 2.278
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.06
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.553
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 400,
+      "elapsedMs": 5.045
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.284
+    },
+    {
+      "path": "totp/setup",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 42.592
+    },
+    {
+      "path": "totp/enable",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 9.638
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.587
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 5.036
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.226
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.351
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 400,
+      "elapsedMs": 3.646
+    },
+    {
+      "path": "cancel",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 4.44
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 3.317
+    },
+    {
+      "path": "prepare",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 2.866
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 2.662
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 0.854
+    },
+    {
+      "path": "commit",
+      "method": "POST",
+      "status": 409,
+      "elapsedMs": 1.93
+    },
+    {
+      "path": "audit",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.072
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 23.804
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 401,
+      "elapsedMs": 2.78
+    },
+    {
+      "path": "guest",
+      "method": "POST",
+      "status": 401,
+      "elapsedMs": 2.413
+    },
+    {
+      "path": "guest",
+      "method": "POST",
+      "status": 200,
+      "elapsedMs": 51.721
+    },
+    {
+      "path": "state",
+      "method": "GET",
+      "status": 200,
+      "elapsedMs": 1.811
+    },
+    {
+      "path": "totp/setup",
+      "method": "POST",
+      "status": 400,
+      "elapsedMs": 43.09
+    }
+  ]
+}
